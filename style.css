@@ -1,0 +1,25 @@
+.heading{
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px rgb(2, 54, 131);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.note{
+    font-size: 15px;
+    color: rgb(2, 3, 28);
+}
+.copy_right_footer{
+    position: fixed;
+    color: gray;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(198, 47, 198);
+    line-height: 3;
+    text-align: center;
+}
+canvas{
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray ;
+}
