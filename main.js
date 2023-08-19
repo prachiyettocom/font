@@ -17,10 +17,9 @@ function setup(){
 }
 function draw(){
     background('#125A9B');
-    document.getElementById("text_size").innerHTML="width and height of the text is "+difference+"px";
+    
     fill('white');
-    stroke('black');
-    text('prachi sharma',200);
+    text('prachi sharma',10,200);
     textSize(difference);
 }
 function modelLoaded(){
@@ -35,6 +34,8 @@ function gotPoses(results){
         leftwristx=results[0].pose.leftWrist.x;
         rightwristx=results[0].pose.rightWrist.x;
         console.log("leftwristx= "+leftwristx+" rightwristx= "+rightwristx);
+        
         difference=floor(leftwristx-rightwristx);
+        document.getElementById("text_size").innerHTML="width and height of the text is "+difference+"px";
     }
 }
